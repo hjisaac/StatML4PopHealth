@@ -45,7 +45,7 @@ transformed parameters{
 model {
     //priors
     beta ~ normal(2, 1); //truncated at 0
-    sigma ~ normal(0.6, 0.3 ); //truncated at 0
+    sigma ~ normal(1.0, 0.3 ); //truncated at 0
     phi_inv ~ exponential(5);
 }
 generated quantities {
