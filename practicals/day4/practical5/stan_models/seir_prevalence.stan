@@ -44,8 +44,8 @@ transformed parameters{
 }
 model {
     //priors
-    beta ~ normal(4, 1); //truncated at 0
-    sigma ~ normal(0.4, 0.4); //truncated at 0
+    beta ~ normal(4, 2); //truncated at 0
+    sigma ~ normal(0.8, 0.3); //truncated at 0
     gamma ~ normal(1.0, 0.25);
     phi_inv ~ exponential(5);
     

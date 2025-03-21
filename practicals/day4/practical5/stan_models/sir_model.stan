@@ -41,8 +41,8 @@ transformed parameters{
 }
 model {
     //priors
-    beta ~ normal(2, 1); //truncated at 0
-    sigma ~ normal(0.4, 0.4); //truncated at 0
+    beta ~ normal(4, 2); //truncated at 0
+    sigma ~ normal(0.8, 0.3); //truncated at 0
     phi_inv ~ exponential(5);
     
     //sampling distribution
