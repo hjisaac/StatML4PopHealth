@@ -27,7 +27,7 @@ model {
   // priors
   alpha_0 ~ normal(0, 2);
   sigma ~ cauchy(0, 1);             
-  alpha ~ normal(0, sigma);
+  alpha ~ normal(alpha_0, sigma);
   beta ~ normal(0, 1);
 
   // likelihood using log PMF
